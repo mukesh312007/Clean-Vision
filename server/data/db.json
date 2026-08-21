@@ -1,0 +1,772 @@
+[
+  {
+    "id": "INS-1968-A",
+    "timestamp": "2026-08-18T11:57:50.834Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Anonymous 1",
+    "score": 81,
+    "status": "Clean",
+    "confidence": 81.2,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1787054262953-112474867.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-9386-B",
+    "timestamp": "2026-08-17T13:08:33.483Z",
+    "hospitalName": "City General Hospital",
+    "block": "B",
+    "floorNumber": "2",
+    "roomNumber": "204",
+    "bathroomId": "CGH-B-2204-B1",
+    "inspectorName": "Admin",
+    "score": 82,
+    "status": "Clean",
+    "confidence": 81.6,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786972112190-768208463.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-5832-B",
+    "timestamp": "2026-08-17T13:08:13.595Z",
+    "hospitalName": "City General Hospital",
+    "block": "B",
+    "floorNumber": "2",
+    "roomNumber": "204",
+    "bathroomId": "CGH-B-2204-B1",
+    "inspectorName": "Admin",
+    "score": 88,
+    "status": "Clean",
+    "confidence": 87.7,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786972090086-736687127.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-5969-A",
+    "timestamp": "2026-08-15T06:54:21.426Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 62.4,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786776860468-286948362.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-1718-A",
+    "timestamp": "2026-08-15T06:54:11.798Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 82,
+    "status": "Clean",
+    "confidence": 82.3,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786776850869-560665984.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-3406-A",
+    "timestamp": "2026-08-15T06:54:05.095Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786776844009-954028002.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-7654-A",
+    "timestamp": "2026-08-15T06:42:28.993Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786776148682-197620415.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-6307-A",
+    "timestamp": "2026-08-15T06:42:20.527Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 82,
+    "status": "Clean",
+    "confidence": 82.3,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786776139454-587244937.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-2368-A",
+    "timestamp": "2026-08-15T06:39:55.752Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 62.4,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786775994672-650447218.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-9912-A",
+    "timestamp": "2026-08-15T06:39:44.093Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786775983078-88595729.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-5726-A",
+    "timestamp": "2026-08-15T06:39:34.980Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 64,
+    "status": "Needs Attention",
+    "confidence": 64.3,
+    "issues": [
+      "Minor surface staining or wet spots"
+    ],
+    "recommendations": [
+      "Clean and dry the floor surface"
+    ],
+    "imageUrl": "/uploads/image-1786775973551-67710186.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-5706-A",
+    "timestamp": "2026-08-15T06:14:06.468Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 82,
+    "status": "Clean",
+    "confidence": 82.3,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786774446195-420090627.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-3029-A",
+    "timestamp": "2026-08-15T06:13:57.572Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786774437366-772090028.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-4146-A",
+    "timestamp": "2026-08-15T06:13:49.928Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786774429686-39102480.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-6614-A",
+    "timestamp": "2026-08-15T06:12:55.518Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 62.4,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786774375277-958079803.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-3513-A",
+    "timestamp": "2026-08-15T06:12:47.719Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 64,
+    "status": "Needs Attention",
+    "confidence": 64.3,
+    "issues": [
+      "Minor surface staining or wet spots"
+    ],
+    "recommendations": [
+      "Clean and dry the floor surface"
+    ],
+    "imageUrl": "/uploads/image-1786774364364-333602201.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-6162-A",
+    "timestamp": "2026-08-14T17:06:30.918Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 62.4,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786727190714-962692941.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-3737-A",
+    "timestamp": "2026-08-14T17:05:00.986Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 11,
+    "status": "Dirty",
+    "confidence": 89,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786727100674-58727416.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-1248-A",
+    "timestamp": "2026-08-14T16:56:12.027Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 64,
+    "status": "Needs Attention",
+    "confidence": 64.3,
+    "issues": [
+      "Minor surface staining or wet spots"
+    ],
+    "recommendations": [
+      "Clean and dry the floor surface"
+    ],
+    "imageUrl": "/uploads/image-1786726571802-987550306.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-5843-A",
+    "timestamp": "2026-08-14T16:56:02.727Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 64,
+    "status": "Needs Attention",
+    "confidence": 64.3,
+    "issues": [
+      "Minor surface staining or wet spots"
+    ],
+    "recommendations": [
+      "Clean and dry the floor surface"
+    ],
+    "imageUrl": "/uploads/image-1786726562496-70235450.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-4377-A",
+    "timestamp": "2026-08-14T16:55:53.652Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 11,
+    "status": "Dirty",
+    "confidence": 89,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786726553383-848999693.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-1005-A",
+    "timestamp": "2026-08-14T16:55:46.287Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786726546032-277744738.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-3717-A",
+    "timestamp": "2026-08-14T16:55:33.267Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 62.4,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786726533050-691680511.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-1365-A",
+    "timestamp": "2026-08-14T16:54:03.281Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 9,
+    "status": "Dirty",
+    "confidence": 90.5,
+    "issues": [
+      "Unclean floor surface",
+      "Visible dirt or debris"
+    ],
+    "recommendations": [
+      "Sweep, mop, and sanitize the floor surface immediately"
+    ],
+    "imageUrl": "/uploads/image-1786726443001-65648445.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-5847-A",
+    "timestamp": "2026-08-14T16:53:53.999Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 82,
+    "status": "Clean",
+    "confidence": 82.3,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786726430536-531452111.jpg",
+    "inspectorId": 2
+  },
+  {
+    "id": "INS-9047-A",
+    "timestamp": "2026-08-14T13:18:13.263Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 88,
+    "status": "Clean",
+    "confidence": 88,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786713487539-377540571.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-1376-A",
+    "timestamp": "2026-08-14T13:17:02.740Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 88,
+    "status": "Clean",
+    "confidence": 88,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786713421717-767698054.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-3520-A",
+    "timestamp": "2026-08-14T13:16:56.982Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 80,
+    "status": "Clean",
+    "confidence": 79.8,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786713416067-736785731.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-5140-A",
+    "timestamp": "2026-08-14T13:16:49.439Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 79,
+    "status": "Clean",
+    "confidence": 78.8,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786713408467-382944933.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-4027-A",
+    "timestamp": "2026-08-14T13:16:28.240Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Admin",
+    "score": 84,
+    "status": "Clean",
+    "confidence": 84.2,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/uploads/image-1786713386985-619951979.jpg",
+    "inspectorId": 1
+  },
+  {
+    "id": "INS-8695-A",
+    "timestamp": "2026-07-13T08:23:00.221Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "101",
+    "bathroomId": "CGH-A-1101-B1",
+    "inspectorName": "Guest Inspector",
+    "score": 62,
+    "status": "Needs Attention",
+    "confidence": 91.5,
+    "issues": [
+      "Water spill on floor",
+      "Sink basin has soap residue or dirt"
+    ],
+    "recommendations": [
+      "Mop and dry the floor",
+      "Scrub and rinse the sink"
+    ],
+    "imageUrl": "/uploads/image-1783930978195-794066449.jpg"
+  },
+  {
+    "id": "INS-4447-D",
+    "timestamp": "2026-07-13T07:48:41.326Z",
+    "hospitalName": "City General Hospital",
+    "block": "D",
+    "floorNumber": "2",
+    "roomNumber": "204",
+    "bathroomId": "CGH-D-2204-B1",
+    "inspectorName": "Guest Inspector",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 94.2,
+    "issues": [
+      "Trash bin is overflowing",
+      "Trash or debris on floor",
+      "Toilet bowl/seat needs cleaning"
+    ],
+    "recommendations": [
+      "Empty trash bin and replace liner",
+      "Sweep and remove trash from floor",
+      "Sanitize and scrub toilet area"
+    ],
+    "imageUrl": "/uploads/image-1783928919306-643973601.jpg"
+  },
+  {
+    "id": "INS-9821-A",
+    "timestamp": "2026-07-12T09:15:00.000Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "3",
+    "roomNumber": "302",
+    "bathroomId": "CGH-A-302-B1",
+    "inspectorName": "Sarah Jenkins",
+    "score": 92,
+    "status": "Very Clean",
+    "confidence": 97.5,
+    "issues": [
+      "Mirror stain"
+    ],
+    "recommendations": [
+      "Wipe mirror with glass cleaner"
+    ],
+    "imageUrl": "/placeholder_clean.jpg"
+  },
+  {
+    "id": "INS-9812-B",
+    "timestamp": "2026-07-12T14:30:00.000Z",
+    "hospitalName": "City General Hospital",
+    "block": "A",
+    "floorNumber": "1",
+    "roomNumber": "105",
+    "bathroomId": "CGH-A-105-B1",
+    "inspectorName": "Robert Chen",
+    "score": 58,
+    "status": "Needs Attention",
+    "confidence": 91.2,
+    "issues": [
+      "Water spill on floor",
+      "Soap dispenser is empty"
+    ],
+    "recommendations": [
+      "Mop and dry the floor",
+      "Refill soap dispenser"
+    ],
+    "imageUrl": "/placeholder_dirty.jpg"
+  },
+  {
+    "id": "INS-9799-C",
+    "timestamp": "2026-07-11T10:00:00.000Z",
+    "hospitalName": "St. Jude Medical Center",
+    "block": "B",
+    "floorNumber": "4",
+    "roomNumber": "411",
+    "bathroomId": "SJM-B-411-B2",
+    "inspectorName": "Sarah Jenkins",
+    "score": 96,
+    "status": "Very Clean",
+    "confidence": 98.9,
+    "issues": [],
+    "recommendations": [
+      "No action required"
+    ],
+    "imageUrl": "/placeholder_clean.jpg"
+  },
+  {
+    "id": "INS-9755-D",
+    "timestamp": "2026-07-11T16:45:00.000Z",
+    "hospitalName": "City General Hospital",
+    "block": "C",
+    "floorNumber": "2",
+    "roomNumber": "210",
+    "bathroomId": "CGH-C-210-B1",
+    "inspectorName": "Robert Chen",
+    "score": 38,
+    "status": "Dirty",
+    "confidence": 93.4,
+    "issues": [
+      "Trash bin is overflowing",
+      "Trash or debris on floor",
+      "Toilet bowl/seat needs cleaning"
+    ],
+    "recommendations": [
+      "Empty trash bin and replace liner",
+      "Sweep and remove trash from floor",
+      "Sanitize and scrub toilet area"
+    ],
+    "imageUrl": "/placeholder_dirty.jpg"
+  },
+  {
+    "id": "INS-9710-E",
+    "timestamp": "2026-07-10T11:20:00.000Z",
+    "hospitalName": "St. Jude Medical Center",
+    "block": "B",
+    "floorNumber": "2",
+    "roomNumber": "204",
+    "bathroomId": "SJM-B-204-B1",
+    "inspectorName": "Maria Rodriguez",
+    "score": 85,
+    "status": "Clean",
+    "confidence": 95.8,
+    "issues": [
+      "Paper towel dispenser is empty"
+    ],
+    "recommendations": [
+      "Restock paper towels"
+    ],
+    "imageUrl": "/placeholder_clean.jpg"
+  }
+]

@@ -1,0 +1,214 @@
+.processing-screen {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.processing-main-card {
+  padding: 16px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--card-bg);
+  backdrop-filter: var(--card-backdrop);
+}
+
+/* Hologram Scanning Viewfinder */
+.scanning-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
+  background-color: #020617;
+}
+
+.scanning-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+.scanning-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Glowing Laser Line */
+.laser-beam {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, #38bdf8 50%, rgba(56, 189, 248, 0) 100%);
+  box-shadow: 0 0 12px 3px rgba(56, 189, 248, 0.8), 0 0 4px 1px #38bdf8;
+  animation: scanLine 2.5s infinite linear;
+  z-index: 10;
+}
+
+/* Simulated Scan Viewfinder Brackets */
+.scanning-viewfinder {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  pointer-events: none;
+}
+
+.v-bracket {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: #38bdf8;
+  border-style: solid;
+}
+
+.top-left { top: 0; left: 0; border-width: 3px 0 0 3px; }
+.top-right { top: 0; right: 0; border-width: 3px 3px 0 0; }
+.bottom-left { bottom: 0; left: 0; border-width: 0 0 3px 3px; }
+.bottom-right { bottom: 0; right: 0; border-width: 0 3px 3px 0; }
+
+.hologram-label {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: rgba(239, 68, 68, 0.2);
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 15;
+}
+
+.hologram-pulse-icon {
+  animation: pulse 1s infinite;
+}
+
+/* Status Progression UI */
+.processing-status-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-spinner-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.processing-spinner {
+  color: var(--primary);
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.processing-title {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.processing-desc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Timeline Layout */
+.stages-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 85%;
+  align-self: center;
+}
+
+.stage-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.35;
+  transition: opacity var(--transition-fast);
+}
+
+.stage-active {
+  opacity: 1;
+}
+
+.stage-past {
+  opacity: 0.75;
+}
+
+.stage-dot-wrapper {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
+}
+
+.stage-active .stage-dot {
+  background-color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  transform: scale(1.3);
+  animation: pulse 1s infinite;
+}
+
+.stage-dot-checked {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-success);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5px;
+}
+
+.stage-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stage-active .stage-text {
+  color: var(--primary);
+  font-weight: 700;
+}

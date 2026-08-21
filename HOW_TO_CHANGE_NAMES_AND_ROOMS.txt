@@ -1,0 +1,135 @@
+﻿ HOW TO CHANGE NAMES, PASSWORDS & ROOM NOS
+
+
+
+STAFF NAMES & PASSWORDS (Login Accounts)
+
+
+There are TWO places you need to change staff accounts.
+You must change BOTH or the logins won't match.
+
+
+
+
+PLACE 1 (Backend / Real Database):
+
+
+
+File:  server > db > database.js
+Lines: 67 to 96
+
+Open that file and you will see this section:
+
+    const users = [
+      {
+        name: 'Anonymous 1',               <-- Change to real Admin name
+        email: 'admin@hospital.com',       <-- Change to real Admin email
+        password: bcrypt.hashSync('Admin@123', 10),   <-- Change password (inside the quotes)
+        role: 'admin',                     <-- DO NOT CHANGE THIS
+        block_access: 'ALL',              <-- Admin sees all blocks, keep as ALL
+      },
+      {
+        name: 'Anonymous 2',               <-- Change to real Inspector name
+        email: 'sarah@hospital.com',       <-- Change to real Inspector email
+        password: bcrypt.hashSync('Inspector@123', 10),  <-- Change password
+        role: 'inspector',                 <-- DO NOT CHANGE THIS
+        block_access: 'A,B',              <-- Change to which blocks this person covers
+      },
+      {
+        name: 'Anonymous 3',               <-- Change to real Inspector name
+        email: 'robert@hospital.com',      <-- Change to real Inspector email
+        password: bcrypt.hashSync('Inspector@123', 10),  <-- Change password
+        role: 'inspector',
+        block_access: 'C,D',              <-- Change to which blocks this person covers
+      },
+      {
+        name: 'Anonymous 4',               <-- Change to real Manager name
+        email: 'maria@hospital.com',       <-- Change to real Manager email
+        password: bcrypt.hashSync('Manager@123', 10),  <-- Change password
+        role: 'manager',
+        block_access: 'ALL',
+      },
+    ];
+
+  RULES FOR PASSWORDS:
+  - The password goes INSIDE the single quotes  e.g. 'MyNewPassword'
+  - Use at least 8 characters
+  - Example:  bcrypt.hashSync('MyNewPass123', 10)
+
+  RULES FOR block_access:
+  - 'ALL'   = person can see every block
+  - 'A,B'   = person can only see blocks A and B
+  - 'A'     = person can only see block A
+  - Use capital letters, separated by commas, no spaces
+
+
+PLACE 2 (Frontend / Offline Fallback):
+
+File:  frontend > src > services > api.js
+Lines: 84 to 98
+
+This is the BACKUP login used when the server is offline.
+It must match PLACE 1 exactly.
+
+    if (email === 'admin@hospital.com' && password === 'Admin@123') {
+      const mockUser = { id: 1, name: 'Anonymous 1', 
+
+Change 'admin@hospital.com' and 'Admin@123' to match what
+you set in Place 1. Do the same for inspector and manager lines.
+
+
+AFTER CHANGING — IMPORTANT STEP:
+The database remembers old data. To apply the new names:
+
+  1. Stop the server if it is running.
+  2. Go to:  server > db > cleanvision.db
+  3. DELETE that file (cleanvision.db).
+  4. Restart the server.
+
+The server will create a fresh database with your new names.
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
+
+   HOSPITAL AND BLOCK NAME
+
+
+The hospital name "City General Hospital" appears in two places:
+
+PLACE 1 — Worker Audit Screen (the form workers fill in):
+  File:  frontend > src > components > ScanScreen.jsx
+  Line:  8
+  Find:  hospitalName: "City General Hospital"
+  Change to your hospital's name.
+
+PLACE 2 — Patient/Visitor QR Complaint Screen:
+  File:  frontend > src > components > ClientScanScreen.jsx
+  Search for "City General Hospital" in that file.
+  Change every instance to your hospital's name.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  QUICK REFERENCE TABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  WHAT TO CHANGE                   | FILE TO OPEN
+  ---------------------------------|---------------------------------------
+  Staff names & passwords (main)   | server/db/database.js  (line 67)
+  Staff names & passwords (backup) | frontend/src/services/api.js (line 84)
+  Remove demo fake alert           | Clear browser localStorage (see Part 2)
+  Hospital name on audit screen    | frontend/src/components/ScanScreen.jsx (line 8)
+  Hospital name on visitor screen  | frontend/src/components/ClientScanScreen.jsx
+
+
+  REMEMBER:
+  - After changing database.js:
+      delete server/db/cleanvision.db, then restart the server
+
+  - After changing api.js:
+      just save the file, browser will pick it up automatically
+
+============================================================
