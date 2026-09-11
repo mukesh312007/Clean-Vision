@@ -83,11 +83,11 @@ export default function App() {
         roomNumber: formData.roomNumber,
         bathroomId: formData.bathroomId,
         inspectorName: formData.inspectorName,
-        score: 84,
+        score: 88,
         status: "Clean",
-        confidence: 96.2,
-        issues: ["Soap dispenser is empty"],
-        recommendations: ["Refill soap dispenser"],
+        confidence: 94.2,
+        issues: [],
+        recommendations: ["Area meets standard cleanliness benchmarks."],
         imageUrl: processingImage || "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80"
       };
       setActiveReport(mockResult);

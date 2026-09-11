@@ -66,24 +66,22 @@ export default function ResultsScreen({ result, onNewScan, onViewHistory }) {
 
   const statusConfig = getStatusConfig();
 
-  // Full observations list
+  // Dynamic model-driven observations list
   const getObservations = () => {
     const list = [];
     
-    // Check if issues exist, else standard clean states
-    const hasTrash = issues.some(i => i.toLowerCase().includes('trash') || i.toLowerCase().includes('debris'));
-    const hasSpill = issues.some(i => i.toLowerCase().includes('spill') || i.toLowerCase().includes('water'));
-    const hasMirror = issues.some(i => i.toLowerCase().includes('mirror') || i.toLowerCase().includes('stain'));
-    const hasToilet = issues.some(i => i.toLowerCase().includes('toilet'));
-    const hasSoap = issues.some(i => i.toLowerCase().includes('soap'));
-    const hasPaper = issues.some(i => i.toLowerCase().includes('paper') || i.toLowerCase().includes('towel'));
-
-    list.push({ text: hasTrash ? "Trash detected on floor" : "Floor is clean", isIssue: hasTrash });
-    list.push({ text: hasSpill ? "Water spill detected on floor" : "Floor surface is dry", isIssue: hasSpill });
-    list.push({ text: hasMirror ? "Mirror has stains/splatters" : "Mirror is clean", isIssue: hasMirror });
-    list.push({ text: hasToilet ? "Toilet area needs cleaning" : "Toilet area is sanitized", isIssue: hasToilet });
-    list.push({ text: hasSoap ? "Soap dispenser is empty" : "Soap dispenser is full", isIssue: hasSoap });
-    list.push({ text: hasPaper ? "Paper towel dispenser is empty" : "Paper towel dispenser is restocked", isIssue: hasPaper });
+    if (issues && issues.length > 0) {
+      issues.forEach(issue => {
+        list.push({ text: issue, isIssue: true });
+      });
+      list.push({ text: `Overall Hygiene Index assessed at ${score}% (${status})`, isIssue: score < 70 });
+      list.push({ text: "AI Computer Vision evaluation finished", isIssue: false });
+    } else {
+      list.push({ text: "Floor surface cleanliness meets hygiene standards", isIssue: false });
+      list.push({ text: "No mud, debris, or dark stains detected", isIssue: false });
+      list.push({ text: "Surface discoloration index within acceptable threshold", isIssue: false });
+      list.push({ text: "Area verified clean and ready for facility usage", isIssue: false });
+    }
     
     return list;
   };

@@ -1,0 +1,8 @@
+{
+  "classes": [
+    "Cleanliness-Score"
+  ],
+  "model_type": "mobilenetv2_classification",
+  "model_version": "2.0",
+  "input_size": 224
+}

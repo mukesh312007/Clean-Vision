@@ -104,6 +104,10 @@ export default function SettingsScreen({ user, theme, onToggleTheme, onBack, onL
         <button className="btn logout-action-btn" onClick={onLogout}>
           <LogOut size={16} /> Sign Out of Workspace
         </button>
+
+        <div style={{ textAlign: 'center', fontSize: '0.75rem', opacity: 0.5, marginTop: '1.5rem', paddingBottom: '1rem' }}>
+          © 2026 Mukesh Vaithiya
+        </div>
       </div>
     </div>
   );
