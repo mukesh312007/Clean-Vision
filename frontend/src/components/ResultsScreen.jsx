@@ -54,6 +54,13 @@ export default function ResultsScreen({ result, onNewScan, onViewHistory }) {
           bgClass: 'bg-danger',
           icon: <XCircle size={16} />
         };
+      case 'Invalid Target':
+        return {
+          class: 'badge-dirty',
+          textClass: 'text-danger',
+          bgClass: 'bg-danger',
+          icon: <AlertTriangle size={16} />
+        };
       default:
         return {
           class: 'badge-clean',
@@ -69,6 +76,14 @@ export default function ResultsScreen({ result, onNewScan, onViewHistory }) {
   // Dynamic model-driven observations list
   const getObservations = () => {
     const list = [];
+    
+    if (status === 'Invalid Target') {
+      (issues || []).forEach(issue => {
+        list.push({ text: issue, isIssue: true });
+      });
+      list.push({ text: "AI Scene Guard: Target does not match bathroom environment", isIssue: true });
+      return list;
+    }
     
     if (issues && issues.length > 0) {
       issues.forEach(issue => {
@@ -137,12 +152,12 @@ export default function ResultsScreen({ result, onNewScan, onViewHistory }) {
                 cy="50" 
                 r="45" 
                 strokeDasharray="282.7"
-                strokeDashoffset={offset}
+                strokeDashoffset={status === 'Invalid Target' ? 282.7 : offset}
               />
             </svg>
             <div className="gauge-text-overlay">
-              <span className="gauge-score-value">{score}%</span>
-              <span className="gauge-score-lbl">hygiene index</span>
+              <span className="gauge-score-value">{status === 'Invalid Target' ? 'N/A' : `${score}%`}</span>
+              <span className="gauge-score-lbl">{status === 'Invalid Target' ? 'invalid target' : 'hygiene index'}</span>
             </div>
           </div>
 
